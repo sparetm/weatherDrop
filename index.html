@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherNow</title>
+    
+    <link href="./style/ionicons.min.css" rel="stylesheet">
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">  
+    
+
+    
+    
+    
+    </head>
+    <body>
+        <section id="display_map">
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="data_info">
+                    <div id="weekly_information">  
+                        
+                        <h1 id="weekly_description">-----</h1>
+                        <h1 id="weekly_humidity">-----</h1>
+                        <h1 id="weekly_pressure">-----</h1>
+                        <h1 id="weekly_day_temp">-----</h1>
+                        <h1 id="weekly_even_temp">-----</h1>
+                        <h1 id="weekly_max_temp">-----</h1>
+                        <h1 id="weekly_min_temp">-----</h1>
+                        <h1 id="weekly_morning_temp">-----</h1>
+                        <h1 id="weekly_night_temp">-----</h1>
+                        <h1 id="weekly_wind_dir">-----</h1>
+                        <h1 id="weekly_wind_speed">-----</h1>
+                    </div>
+                    <div class="weekly_statement">
+                        
+                        <h2 class="weekly_description">Description</h2>
+                        <h2 class="weekly_humidity">Humidity</h2>
+                        <h2 class="weekly_pressure">Pressure</h2>
+                        <h2 class="weekly_day_temp">Day-temp</h2>
+                        <h2 class="weekly_even_temp">Evening-temp</h2>
+                        <h2 class="weekly_max_temp">Max-temp</h2>
+                        <h2 class="weekly_min_temp">Min-temp</h2>
+                        <h2 class="weekly_morning_temp">Morning-temp</h2>
+                        <h2 class="weekly_night_temp">Night-temp</h2>
+                        <h2 class="weekly_wind_dir">Wind-direction</h2>
+                        <h2 class="weekly_wind_speed">Wind-speed</h2>
+                    </div>
+                
+                </div>
+               
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="navigation">
+        <h1>Weather Forecast</h1>
+        <div class="input_values">
+        <input id="input" type="text" placeholder="Enter city"></input>
+        <i class="ion-ios-search" onclick="search();"></i>
+        </div>
+           
+        </section>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////-->
+ <!-- //////////////////////////////////////////////////////////////////////////////////////////////////--> 
+ <!-- //////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <!-- ////////////////////////////////////   CHANGEABLE CONTENT   //////////////////////////////////////-->
+   <!-- //////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   <!-- //////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   <!-- //////////////////////////////////////////////////////////////////////////////////////////////////-->         
+       
+   
+<section class="content">
+    <div id="info_1">
+        <div id="main_data_1">
+            <h1 id="temperature">-----</h1>
+            <h1 id="description">-----</h1>
+        </div>
+        
+       <i class="ion-ios-sunny-outline" id="ico"></i> 
+    </div>
+    <div class="stat_1">
+        <h2 class="temperature">Temperature</h2>
+        <h2 class="description">Description</h2>
+    </div>
+
+
+    
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+     <div id="info_2">
+        <h1 id="place">-----</h1>
+        <h1 id="latitude">-----</h1>
+        <h1 id="longitude">-----</h2>
+        <h1 id="country">-----</h2>
+     </div>
+     <div class="stat_2">
+        <h2 class="place">Place</h2>
+        <h2 class="latitude">Latitude</h2>
+        <h2 class="longitude">Longitude</h2>
+        <h2 class="country">Country</h2>
+    </div>
+
+
+
+
+
+     <div id="info_3"> 
+        <div id="main_data_2">
+            <h1 id="date">-----</h2>
+           <h1 id="wind_degree">-----</h2>
+           <h1 id="wind_speed">-----</h2>
+           </div>
+    </div>
+    <div class="stat_3">
+        <h2 class="date">Today's Date</h2>
+        <h2 class="wind_degree">Wind Direction</h2>
+        <h2 class="wind_speed">Wind Speed</h2>
+    </div>
+
+
+
+
+    <div id="info_4">  
+        <h1 id="temp_min">-----</h1>
+        <h1 id="temp_max">-----</h1>
+        <h1 id="humidity">-----</h1>
+        <h1 id="pressure">-----</h1>
+    </div>
+    <div class="stat_4">
+        <h2 class="temp_min">Min Temperature</h2>
+        <h2 class="temp_max">Max Temperature</h2>
+        <h2 class="humidity">Humidity</h2>
+        <h2 class="pressure">Pressure</h2>
+    </div>
+
+
+
+    </section> 
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   
+  
+
+<section class="weekly_info">
+    <div class="weekly">
+        <ul>
+         <li class="day_0">
+         <i class="ion-ios-sunny-outline" id="ico_0"></i> 
+         <h1 id="date_0">-----</h1>
+         <h1 id="temperature_0">-----</h1>
+         <h1 id="description_0">-----</h1>
+         </li>
+         <li class="day_1">
+            <i class="ion-ios-sunny-outline" id="ico_1"></i> 
+            <h1 id="date_1">-----</h1>
+            <h1 id="temperature_1">-----</h1>
+            <h1 id="description_1">-----</h1>
+         </li>
+         <li class="day_2">
+            <i class="ion-ios-sunny-outline" id="ico_2"></i> 
+            <h1 id="date_2">-----</h1>
+            <h1 id="temperature_2">-----</h1>
+            <h1 id="description_2">-----</h1>
+         </li>
+         <li class="day_3">
+            <i class="ion-ios-sunny-outline" id="ico_3"></i> 
+            <h1 id="date_3">-----</h1>
+            <h1 id="temperature_3">-----</h1>
+            <h1 id="description_3">-----</h1>
+         </li>
+         <li class="day_4">
+            <i class="ion-ios-sunny-outline" id="ico_4"></i> 
+            <h1 id="date_4">-----</h1>
+            <h1 id="temperature_4">-----</h1>
+            <h1 id="description_4">-----</h1>
+         </li>
+         <li class="day_5">
+            <i class="ion-ios-sunny-outline" id="ico_5"></i> 
+            <h1 id="date_5">-----</h1>
+            <h1 id="temperature_5">-----</h1>
+            <h1 id="description_5">-----</h1>
+         </li>
+         <li class="day_6">
+            <i class="ion-ios-sunny-outline" id="ico_6"></i> 
+            <h1 id="date_6">-----</h1>
+            <h1 id="temperature_6">-----</h1>
+            <h1 id="description_6">-----</h1>
+         </li>
+        </ul>
+        </div>
+</section>
+
+
+
+  
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////-->
+ <!-- //////////////////////////////////////////////////////////////////////////////////////////////////--> 
+ <!-- //////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <!-- ////////////////////////////////////   CHANGEABLE CONTENT   //////////////////////////////////////-->
+   <!-- //////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   <!-- //////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   <!-- //////////////////////////////////////////////////////////////////////////////////////////////////-->   
+    <script src="app.js"></script>     
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=**********&callback=initMap">
+    </script> 
+       
+    </body>
+</html>
