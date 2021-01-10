@@ -1,5 +1,5 @@
 # weatherNow
- A simple weather webapp with integrated Google map<br>
+A simple weather web app with an integrated Google map<br>
 ## TECHNOLOGY USED:- Html, Css, JavaScript
 ### upload date:- 10 Jan, 2021
 Go to your browser and type<br>
