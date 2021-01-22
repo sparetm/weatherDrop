@@ -397,7 +397,117 @@ function search() {
         
       var map = new google.maps.Map(document.getElementById("map"), {
         center:location,  
-        zoom:8
+        zoom:8, 
+        styles: [
+          {
+            "featureType": "administrative",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "color": "#ffb005"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#000000"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#042929"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape.man_made",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#122d06"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape.natural.landcover",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#00423b"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape.natural.terrain",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#32dbcb"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#32dbcb"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#ff7b00"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#ff7b00"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#ffd500"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#020722"
+              }
+            ]
+          }
+        ]
           
       });
   
