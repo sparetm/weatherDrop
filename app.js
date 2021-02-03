@@ -1,4 +1,4 @@
-var weatherApi = `53f36070c807fdc80d5093ea3b579b14`;
+var weatherApi = `**********`;
 //var googleApi = `**********`;
 var latitude = NaN;
 var longitude = NaN;
