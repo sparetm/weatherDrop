@@ -1,4 +1,4 @@
-# weatherNow
+# weatherDrop
 A simple weather web app with an integrated Google map<br>
 ## TECHNOLOGY USED:- Html, Css, JavaScript
 ### upload date:- 10 Jan, 2021
