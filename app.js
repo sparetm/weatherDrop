@@ -1,4 +1,4 @@
-var weatherApi = `**********`;
+var weatherApi = `53f36070c807fdc80d5093ea3b579b14`;
 //var googleApi = `**********`;
 var latitude = NaN;
 var longitude = NaN;
@@ -107,9 +107,22 @@ var night_temperature_6='-----';
 
 
 
-       
+var city = " ";  
+/*
+function record(){
+    var recognition = new webkitSpeechRecognition();
+    recognition.lang = "en-GB";
+    recognition.onresult = function(event){
+    city = event.results[0][0].transcript;
+  
+    }
+    recognition.start();
+}
+*/
+
+
 function search() {
-    const city = document.getElementById('input').value;
+    city = document.getElementById('input').value;
     current_Weather(city, latitude, longitude, weatherApi);
    
     }

@@ -28,7 +28,37 @@ html {
   margin-left: 10px;
   width: 25%;
 }
+/*
+.search_by_voice {
+  outline: none;
+  display: inline-block;
+  
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #24cfaa;
+  margin-left:1070px;
+  box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #ffffff;
+  transition: 0.5s;
+}
 
+.search_by_voice:hover {
+  background: #2fdbb6;
+  transition: 0.5s;
+}
+
+.search_by_voice:active {
+  background: #fc0101;
+  transition: 0.2s;
+}
+*/
 .ion-ios-search {
   position: absolute;
   display: inline-block;
@@ -36,7 +66,6 @@ html {
   color: rgb(255, 255, 255);
   margin-left: 283px;
   padding-left: 5px;
-
   margin-top: 0.7px;
   background-color: rgb(4, 205, 255);
   width: 2%;
@@ -51,7 +80,7 @@ html {
   width: 20%;
   height: 45%;
   border-radius: 5px 5px 5px 5px;
-  color: rgb(165, 165, 165);
+  color: rgb(136, 136, 136);
   margin-top: 0px;
   margin-left: 0px;
 
@@ -64,7 +93,7 @@ html {
   background: none;
 }
 .input_values {
-  margin-left: 1180px;
+  margin-left: 1180px; /*1130px*/
   margin-top: -72px;
   width: 22%;
   height: 100%;
